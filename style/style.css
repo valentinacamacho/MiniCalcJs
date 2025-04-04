@@ -1,0 +1,159 @@
+h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    animation: aparecer 2s ease-out forwards;
+    opacity: 0;
+    margin-bottom: 30px;
+  }
+  
+  @keyframes aparecer {
+    0% {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.inputs input {
+  width: 250px;
+  padding: 12px 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+  text-align: center;
+}
+
+.inputs input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.sumar {
+  background-color: #4caf50;
+}
+
+.restar {
+  background-color: #f44336;
+}
+
+.multiplicar {
+  background-color: #2196f3;
+}
+
+.dividir {
+  background-color: #ff9800;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Estilos base para pantallas grandes */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f0f0f0;
+  padding: 40px;
+  text-align: center;
+}
+
+.input1 {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input1 input {
+  width: 200px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 12px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.sumar {
+  background: #4caf50;
+}
+.restar {
+  background: #f44336;
+}
+.multiplicar {
+  background: #2196f3;
+}
+.dividir {
+  background: #ff9800;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* Responsive para tablets */
+@media (max-width: 768px) {
+  .input1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input1 input {
+    width: 90%;
+  }
+
+  .btn {
+    width: 90%;
+    font-size: 18px;
+  }
+}
+
+/*Responsive para celulares */
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
+
+  .input1 input {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 20px;
+    padding: 15px;
+  }
+}
